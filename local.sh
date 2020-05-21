@@ -1,9 +1,9 @@
-#!/bin/bash                                                           
+#!/bin/bash
 clear
 figlet LocalHost
 echo "SharkXploiter Crew"
-echo "╭─Masukkan Port yang akan di gunakan di localhost example (8888)"
+echo "╭─Masukkan Port yang akan di gunakan di localhost example 8080"
 read -p "╰─>" port
-echo "╭─Masukkan File yang akan di jalankan di localhost : "
+echo "╭─Masukkan File yang akan di jalankan di localhost"
 read -p "╰─>" file
-php -S 127.0.0.1:$port $file
+php -S 127.0.0.1:$port -t /sdcard/$file
